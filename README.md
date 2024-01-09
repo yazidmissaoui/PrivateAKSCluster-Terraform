@@ -1,6 +1,6 @@
 ---
 services: aks, container-registry, azure-monitor, storage, virtual-network, virtual-machines, private-link, templates, terraform, devops, firewall
-author: paolosalvatori
+author: yazid missaoui
 ---
 
 # Create a private Azure Kubernetes Service cluster using Terraform and Azure DevOps #
