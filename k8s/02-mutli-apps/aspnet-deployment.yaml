@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+ name: aspnet-app
+spec: 
+ replicas: 1 
+ selector: 
+  matchLabels: 
+   app: aspnet-app 
+ template: 
+  metadata: 
+   labels: 
+    app: aspnet-app
+  spec: 
+   containers:
+   - name: aspnet 
+     image: mcr.microsoft.com/dotnet/samples:aspnetapp
+     ports:
+     - containerPort: 80

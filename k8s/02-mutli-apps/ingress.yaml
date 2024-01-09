@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1 
+kind: Ingress 
+metadata: 
+ name: my-ingress 
+spec:
+ ingressClassName: azure-application-gateway 
+ rules:
+ - http: 
+    paths:
+     - path: /
+       pathType: Prefix 
+       backend:
+        service: 
+         name: nginx-service 
+         port:
+          number: 80
+     - path: /asp
+       pathType: Prefix
+       backend:
+        service:
+         name: aspnet-service
+         port:
+          number: 80

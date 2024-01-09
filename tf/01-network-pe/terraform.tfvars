@@ -1,0 +1,12 @@
+resource_group_name   = "RG-Aks-cluser"
+prefix = "monitoringstack"
+location              = "francecentral"
+aks_cluster_name      = "aks"
+aks_node_count        = 3
+aks_node_vm_size      = "Standard_D2s_v3"
+key_vault_name        = "privatekeyvaultms"
+storage_endpoint      = "storage-private-endpoint"
+storage_account_name  = "privatestorageaccountms"
+environment           = "non-prod"
+ip_bastion_host       = "ip_bastion_host"
+linux_vm = "linux-bastion"

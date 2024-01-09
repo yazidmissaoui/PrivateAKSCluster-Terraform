@@ -1,0 +1,4 @@
+//Link to kubectl binary 
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+//Connect to private cluster
+az aks get-credentials --resource-group [resource-group] --name [AKS_cluster_name]
